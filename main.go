@@ -3,11 +3,11 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/timothyandrew/hackattic/miniminer"
+	"github.com/timothyandrew/hackattic/unpack"
 )
 
 type Exercise interface {
-	Run(token string)
+	Run(token string) error
 }
 
 func main() {
@@ -15,13 +15,13 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
 	token := string(tokenData)
 
-	exercises := []Exercise{
-		miniminer.Exercise{},
-	}
+	// err = miniminer.Run(token)
+	err = unpack.Run(token)
 
-	for _, exercise := range exercises {
-		exercise.Run(token)
+	if err != nil {
+		panic(err)
 	}
 }
