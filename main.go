@@ -3,7 +3,7 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/timothyandrew/hackattic/unpack"
+	"github.com/timothyandrew/hackattic/ssl"
 )
 
 type Exercise interface {
@@ -19,7 +19,8 @@ func main() {
 	token := string(tokenData)
 
 	// err = miniminer.Run(token)
-	err = unpack.Run(token)
+	// err = unpack.Run(token)
+	err = ssl.Run(token)
 
 	if err != nil {
 		panic(err)
