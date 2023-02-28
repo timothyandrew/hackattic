@@ -2,8 +2,6 @@ package main
 
 import (
 	"io/ioutil"
-
-	"github.com/timothyandrew/hackattic/ssl"
 )
 
 type Exercise interface {
@@ -20,7 +18,10 @@ func main() {
 
 	// err = miniminer.Run(token)
 	// err = unpack.Run(token)
-	err = ssl.Run(token)
+	// err = ssl.Run(token)
+
+	// err = registry.Run(token)
+	// err = registry.Solve(token)
 
 	if err != nil {
 		panic(err)
