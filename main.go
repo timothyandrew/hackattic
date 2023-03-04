@@ -3,7 +3,7 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/timothyandrew/hackattic/rdb"
+	"github.com/timothyandrew/hackattic/dns"
 )
 
 type Exercise interface {
@@ -28,7 +28,9 @@ func main() {
 	// err = dtmf.Run(token)
 	// err = dtmf.Solve(token)
 
-	err = rdb.Run(token)
+	// err = rdb.Run(token)
+
+	err = dns.Run(token)
 
 	if err != nil {
 		panic(err)

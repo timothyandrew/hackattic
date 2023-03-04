@@ -6,10 +6,14 @@ require (
 	github.com/Hallicopter/go-dtmf v0.1.8
 	github.com/biter777/countries v1.6.4
 	github.com/go-audio/wav v1.1.0
+	github.com/miekg/dns v1.0.14
 )
 
 require (
 	github.com/caicloud/nirvana v0.3.1 // indirect
 	github.com/go-audio/audio v1.0.0 // indirect
 	github.com/go-audio/riff v1.0.0 // indirect
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
+	golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect
+	golang.org/x/sys v0.0.0-20201015000850-e3ed0017c211 // indirect
 )
