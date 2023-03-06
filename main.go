@@ -3,7 +3,7 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/timothyandrew/hackattic/ws"
+	"github.com/timothyandrew/hackattic/face"
 )
 
 type Exercise interface {
@@ -31,7 +31,8 @@ func main() {
 	// err = rdb.Run(token)
 	// err = dns.Run(token)
 
-	err = ws.Run(token)
+	// err = ws.Run(token)
+	err = face.Run(token)
 
 	if err != nil {
 		panic(err)
