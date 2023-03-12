@@ -3,7 +3,7 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/timothyandrew/hackattic/face"
+	"github.com/timothyandrew/hackattic/jwt"
 )
 
 type Exercise interface {
@@ -32,7 +32,9 @@ func main() {
 	// err = dns.Run(token)
 
 	// err = ws.Run(token)
-	err = face.Run(token)
+	// err = face.Run(token)
+
+	err = jwt.Run(token)
 
 	if err != nil {
 		panic(err)

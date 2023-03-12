@@ -7,6 +7,7 @@ require (
 	github.com/biter777/countries v1.6.4
 	github.com/esimov/pigo v1.4.6
 	github.com/go-audio/wav v1.1.0
+	github.com/golang-jwt/jwt/v5 v5.0.0-rc.1
 	github.com/miekg/dns v1.0.14
 	golang.org/x/net v0.0.0-20200707034311-ab3426394381
 )
