@@ -1,3 +1,6 @@
 token
 .DS_Store
 registry_url
+zip/*.zip
+zip/*.txt
+zip/*.txt~
