@@ -3,7 +3,7 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/timothyandrew/hackattic/jwt"
+	"github.com/timothyandrew/hackattic/ocr"
 )
 
 type Exercise interface {
@@ -34,7 +34,8 @@ func main() {
 	// err = ws.Run(token)
 	// err = face.Run(token)
 
-	err = jwt.Run(token)
+	// err = jwt.Run(token)
+	err = ocr.Run(token)
 
 	if err != nil {
 		panic(err)

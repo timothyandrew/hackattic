@@ -9,6 +9,7 @@ require (
 	github.com/go-audio/wav v1.1.0
 	github.com/golang-jwt/jwt/v5 v5.0.0-rc.1
 	github.com/miekg/dns v1.0.14
+	github.com/otiai10/gosseract/v2 v2.4.0
 	golang.org/x/net v0.0.0-20200707034311-ab3426394381
 )
 
